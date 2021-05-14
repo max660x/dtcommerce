@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2d3035;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffbf5e;
+}
+
+.input[type=text]{
+    position:relative;
+    left:-6px;
+    border:1px solid #ffae00;
+    background: #ffbf5e; /* Old browsers */
+    color:gainsboro;
+    border-radius:15px;
+    cursor: pointer;
+    background-color:#ffbf5e;
+    color:#ffffff;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(255, 123, 0);
+    border-radius: 15px;
+    border-color: darkorange;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.bottone{
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(231, 97, 35);
+    border: none;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.bottone span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .bottone span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .bottone:hover span {
+    padding-right: 25px;
+
+  }
+
+  .bottone:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+/* Style the content */
+.content {
+    background-color: #ddd;
+    padding: 10px;
+    height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
